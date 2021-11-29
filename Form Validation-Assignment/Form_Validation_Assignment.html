@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head><title>.NET Developer Application</title>
+<link rel="stylesheet" href="./Styles/Form_Validation_Assignment.css">
+<script src="Script/Form_Validation_Assignment.js"></script></head>
+<body>
+    <h1>Submit Your Application</h1>
+    <h3>for .NET Developer (Fresher) </h3>
+    <div>
+        <p>Personal Information</p>
+        <!--Name Box-->
+        <div id="namebox">
+            <div id="nameb"><label>Name as per ID Proof<span class="star"> *</span><span id="namecheck" style="color:red ; visibility :hidden">Name is required</span></label><br>
+                <input type="text" id="name" name="NameBox" onpointerleave="" placeholder="Enter your Name"></div>
+            <div><label>Father's Name<span> *</span><span id="fathernamecheck" style="color:red ; visibility :hidden">FatherName is required</span></label><br>
+                <input type="text" id="father's" name="FatherNameBox" placeholder="Enter your Name"></div>
+        </div>
+        <!--Email Box-->
+        <div id="emailbox">
+            <div id="emailb"><label>Email<span class="star">* </span><span id="emailcheck" style="color:red ; visibility :hidden">Email required</span></label><br>
+                <input type="text" id="emailid" name="EmailBox" placeholder="Enter your EmailID"></div>
+            <div id="dobb"><label>Date Of Birth<span class="star"> *</span><span id="dobcheck" style="color:red ; visibility :hidden">Date of Birth required</span></label><br>
+                <input type="text" id="dob" name="DobBox" placeholder="DD-MM-YYYY"></div>
+                <div id="mobb"><label>Mobile No<span class="star"> *</span><span id="mobcheck" style="color:red ; visibility :hidden">Mobile Number required</span></label><br>
+                    <input type="number" id="mobile"name="NumBox" placeholder="10-Digit Mobile Number"></div>
+        
+        </div>
+        <!--Address1 Box-->
+        
+            <label>Current Address<span class="star"> *</span><span id="addressl1check" style="color:red ; visibility :hidden">Address required</span></label><br>
+            <div id="address1box" >
+        <input type="text" id="add1L1" name="AddBox" placeholder="Address Line 1"><br>
+        <label id="addressl2check" style="color:red ; visibility :hidden">Address required</label><br>
+        <input type="text" id="add1L2" name="AddBox" placeholder="Address Line 2">
+        </div>
+        <!--City Box-->
+      
+            <label id="citycheck" style="color:red ; visibility :hidden">City required</label><br>
+            <div id="citybox">
+            <input type="text" id="city1"name="CityBox" placeholder="City"><br>
+
+            <label id="state1check" style="color:red ; visibility :hidden">State required</label><br>
+            <select id="state1">
+                <option>select</option>
+                <option>Tamil Nadu</option>
+                <option>AndraPradesh</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+            </select>
+        <!--Zipcode Box-->
+  
+        <label id="Zipcheck" style="color:red ; visibility :hidden">Zipcode required</label><br>
+        <input type="number" id="zipcode1"name="PincodeBox" placeholder="Zipcode">
+        </div id="pabox">
+        <!--Permanent Address-->
+            <label>Permanent Address<span class="star" > *</span></label><input type="checkbox" id="addresstick" onclick="copyaddress()">Same as Current Address</input><br>
+            <div id="Paddressl1check" style="color:red ; visibility :hidden">Address required</div><br>
+            <div id="paadressbox">
+        <input type="text" id="add2L1" name="AddBox" placeholder="Address Line 1"><br>
+        <span id="Paddressl2check" style="color:red ; visibility :hidden"></span>
+        <input type="text" id="add2L2" name="AddBox" placeholder="Address Line 2">
+        </div>
+        <!--City Box-->
+        <div>
+        <div><label id="city2check" style="color:red ; visibility :hidden">City required<span class="star">*</span></label></span><br>
+            <input type="text" id="city2" name="CityBox" placeholder="City"><br>
+        <!--State Box-->
+        <label id="state2check" style="color:red ; visibility :hidden">State required</label><br>
+            <select id="state2" >
+                <option>select</option>
+                <option>Tamil Nadu</option>
+                <option>AndraPradesh</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+            </select>
+        <!--Zipcode Box-->
+        </div>
+        <label id="Zip2check" style="color:red ; visibility :hidden">Zipcode required<span class="star">*</span></label><br>
+        <input type="number" id="zipcode2" name="PincodeBox" placeholder="Zipcode">
+        </div>
+        <!--upload Box-->
+        <div>
+            <h4>Upload Profile Photo<span class="star">*</span>(JPG/PNG format only)</h3>
+            <h4>please upload a photo of yourself. Your face should be clearly visible. Make sure the image size does not exceed 500KB. </h3>
+                <label id="filecheck" style="color:red ; visibility :hidden">Photo required</label>
+                <input type="file" id="photo" value="UPLOAD PHOTO">
+        </div>
+
+        <div>
+            <input id="submit" type="button" onclick="validateform()" value="submit">
+        </div>
+        
+
+    </div>
+</body>

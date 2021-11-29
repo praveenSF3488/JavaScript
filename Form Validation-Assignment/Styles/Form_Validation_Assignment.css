@@ -1,0 +1,33 @@
+ body{
+     width: 700px;
+     height: 950px;
+     margin: .5% 10% 0% 15%;
+     padding: 0% 5% ;
+     border: 1px black solid;
+ }
+
+ #namebox{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ #emailbox{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ #address1box{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ #citybox{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ #pabox{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+.star{
+    color: red;
+}
